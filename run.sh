@@ -9,6 +9,7 @@ echo npm start
 # docker rm -f express-api
 # docker rmi express-api
 # docker compose -f docker-compose.yml up -d
+echo npx npm-check-updates -u
 node server.js
 
 exit 0

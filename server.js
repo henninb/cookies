@@ -113,4 +113,6 @@ server.listen(port, function (err) {
     return;
   }
   console.log(`Listening on port ${port}`);
+  console.log(`https://127.0.0.1:${port}`);
+  console.log(`https://localhost:${port}`);
 });
