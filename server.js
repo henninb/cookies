@@ -18,10 +18,14 @@ const options = {
   // allowHTTP1: true
 };
 
-app.get('/', (_request, response) => {
-  //if nothing requested, redirect to '/index.html'
-  response.redirect('/index.html');
-});
+
+app.use(express.static(path.join(__dirname, 'public'), {
+}));
+
+// app.get('/', (_request, response) => {
+//   //if nothing requested, redirect to '/index.html'
+//   response.redirect('/index.html');
+// });
 
 app.get('/set', (req, res) => {
   //fetch call to add a new cookie called 'token'
